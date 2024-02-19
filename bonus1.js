@@ -7,7 +7,7 @@ let vb = [];
 for (i = 0; i < abc.length; i++) {
   vb.length > 1 ? bcd.push(vb) : (bcd = bcd.concat(vb));
   vb = [];
-  let matching = bcd.length > 0 ? callMethodCheck(bcd, abc[i]) : false;
+
   for (j = i; j < abc.length; j++) {
     if (
       matching == true ||
