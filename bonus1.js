@@ -7,7 +7,7 @@ let vb = [];
 for (i = 0; i < abc.length; i++) {
   vb.length > 1 ? bcd.push(vb) : (bcd = bcd.concat(vb));
   vb = [];
-
+  let matching = bcd.length > 0 ? callMethodCheckoperation(bcd, abc[i]) : false;
   for (j = i; j < abc.length; j++) {
     if (
       matching == true ||
@@ -20,7 +20,7 @@ for (i = 0; i < abc.length; i++) {
   }
 }
 vb.length > 1 ? bcd.push(vb) : (bcd = bcd.concat(vb));
-function callMethodCheck(bcd, a) {
+function callMethodCheckoperation(bcd, a) {
   let count1 = 0;
   bcd = bcd.flat();
   for (k in bcd) {
